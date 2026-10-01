@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Express</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+    text-align: center;
+  }
+
+  header {
+    padding: 60px 20px 40px;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+  }
+
+  header p {
+    color: #aaa;
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+
+  .precio {
+    margin: 40px auto;
+    max-width: 400px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 30px;
+  }
+
+  .precio .monto {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff5733;
+  }
+
+  .precio .detalle {
+    margin-top: 15px;
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .boton {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #ff5733;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+
+  .boton:hover {
+    background: #e14a29;
+  }
+
+  .trabajos {
+    padding: 50px 20px;
+  }
+
+  .trabajos h2 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .galeria img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #333;
+  }
+
+  footer {
+    padding: 40px 20px;
+    color: #777;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    .galeria img {
+      width: 100%;
+      max-width: 340px;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Web Express</h1>
+    <p>Tu sitio web listo en pocos días, sin complicaciones.</p>
+  </header>
+
+  <section class="precio">
+    <div class="monto">$100.000</div>
+    <div class="detalle">
+      Abono: $15.000<br>
+      Entrega: 3–5 días
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=56935539412&amp;text=Hola%2C+quiero+reservar+mi+p%C3%A1gina+web+de+%24100.000+con+un+abono+de+%2415.000.&amp;lang=es" target="_blank" rel="noopener noreferrer" class="boton">Reservar ahora</a>
+  </section>
+
+  <section class="trabajos">
+    <h2>Algunos trabajos realizados</h2>
+    <div class="galeria">
+      <img src="trabajo1.png" alt="Trabajo 1">
+      <img src="trabajo2.png" alt="Trabajo 2">
+      <img src="trabajo3.png" alt="Trabajo 3">
+    </div>
+  </section>
+
+  <footer>
+    © 2026 — Contacto: melissa.sandoval.work@gmail.com
+  </footer>
+
+</body>
+</html>
